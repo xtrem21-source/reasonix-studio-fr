@@ -24,7 +24,7 @@ license; see `LICENSE`.
 - `README.md` (English) and `README.fr.md` (French), both stating what was
   changed from upstream, what the known limitation is, and what the license
   requires.
-- `reasonix-studio-2.50-fr.zip` (193 MB) published as a release asset. The
+- `ReasonixStudio-windows-amd64-fr.zip` (193 MB) published as a release asset. The
   upstream executable weighs 234 MB, above the 100 MB per-file limit GitHub
   enforces on repository trees — a release asset is the only compliant way to
   distribute it.

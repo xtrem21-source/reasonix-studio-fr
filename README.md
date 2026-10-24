@@ -29,7 +29,7 @@ Documentation exists in English (`README.md`, `CHANGELOG.md`) and in French
 
 ## Install
 
-1. download `reasonix-studio-2.50-fr.zip` from the **Releases** page;
+1. download `ReasonixStudio-windows-amd64-fr.zip` from the **Releases** page;
 2. extract it wherever you want (for example `J:\Reasonix Studio`);
 3. run `Reasonix Studio.exe`.
 

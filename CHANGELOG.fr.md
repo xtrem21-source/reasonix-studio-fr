@@ -26,7 +26,7 @@ C'est une œuvre dérivée du projet amont, distribuée sous sa licence MIT ; vo
   choix du fournisseur, et un repli automatique quand un fournisseur échoue.
 - `README.md` (anglais) et `README.fr.md` (français), tous deux précisant ce qui a
   été modifié par rapport à l'amont, la limite connue, et ce que la licence impose.
-- `reasonix-studio-2.50-fr.zip` (193 Mo) publiée comme élément de release.
+- `ReasonixStudio-windows-amd64-fr.zip` (193 Mo) publiée comme élément de release.
   L'exécutable amont pèse 234 Mo, au-delà de la limite de 100 Mo par fichier que
   GitHub applique aux arborescences — l'élément de release est la seule façon
   conforme de le distribuer.

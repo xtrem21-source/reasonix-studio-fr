@@ -29,7 +29,7 @@ anglais (`README.md`, `CHANGELOG.md`).
 
 ## Installation
 
-1. télécharger `reasonix-studio-2.50-fr.zip` depuis la page **Releases** ;
+1. télécharger `ReasonixStudio-windows-amd64-fr.zip` depuis la page **Releases** ;
 2. dézipper où vous voulez (par exemple `J:\Reasonix Studio`) ;
 3. lancer `Reasonix Studio.exe`.
 
