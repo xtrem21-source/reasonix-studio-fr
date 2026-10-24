@@ -13,6 +13,9 @@ Le travail de traduction lui-même — dictionnaire, scripts, outillage — vit 
 propre dépôt : [**Reasonix-Traduction-Fr**](https://github.com/xtrem21-source/Reasonix-Traduction-Fr).
 Ce dépôt-ci ne livre que le résultat.
 
+La documentation existe en français (`README.fr.md`, `CHANGELOG.fr.md`) et en
+anglais (`README.md`, `CHANGELOG.md`).
+
 ---
 
 ## Ce qu'il contient

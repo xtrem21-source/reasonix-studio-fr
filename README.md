@@ -13,6 +13,9 @@ The translation work itself — dictionary, scripts, tooling — lives in its ow
 repository: [**Reasonix-Traduction-Fr**](https://github.com/xtrem21-source/Reasonix-Traduction-Fr).
 This repository only ships the result.
 
+Documentation exists in English (`README.md`, `CHANGELOG.md`) and in French
+(`README.fr.md`, `CHANGELOG.fr.md`).
+
 ---
 
 ## What is inside
