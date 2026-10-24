@@ -1,78 +1,76 @@
-# Reasonix Studio FR — version complète, français intégré
+# Reasonix Studio FR
 
-Version **prête à installer** de [Reasonix Studio](https://github.com/esengine/DeepSeek-Reasonix)
-en français, avec un **micro de dictée** intégré.
+**A ready-to-run French build of Reasonix Studio, with a built-in dictation microphone.**
 
-Pas de patch à lancer. On télécharge l'archive de la release, on dézippe, on
-lance. L'interface s'ouvre en français.
+This repository publishes the recompiled French version of **Reasonix Studio** — the
+desktop application of the [**DeepSeek-Reasonix**](https://github.com/esengine/DeepSeek-Reasonix)
+project — so that nobody has to patch anything after installing it.
+
+> **Unofficial.** This project is not affiliated with, endorsed by, or sponsored by
+> the DeepSeek-Reasonix (Reasonix Studio) project or its maintainers.
+
+The translation work itself — dictionary, scripts, tooling — lives in its own
+repository: [**Reasonix-Traduction-Fr**](https://github.com/xtrem21-source/Reasonix-Traduction-Fr).
+This repository only ships the result.
 
 ---
 
-## Ce qu'il y a dedans
+## What is inside
 
-| Élément | Détail |
+| Item | Detail |
 |---|---|
-| Reasonix Studio | **2.50.0**, Windows x64, tel que publié par l'amont |
-| Interface | **5 047 libellés traduits**, langue automatique forcée en français |
-| Micro | dictée intégrée à la fenêtre de chat, avec choix du fournisseur et repli automatique |
-| Données | restent sur le disque de votre choix ; aucune n'est écrite pendant la préparation |
+| Reasonix Studio | **2.50.0**, Windows x64, as published upstream |
+| Interface | **5 047 strings translated**, automatic language forced to French |
+| Microphone | dictation wired into the chat composer, provider selection, automatic fallback |
+| Packaging | a plain folder — no installer, no registry entry, no administrator rights |
 
-## Installation
+## Install
 
-1. télécharger `reasonix-studio-2.50-fr.zip` depuis la page **Releases** ;
-2. dézipper où vous voulez (par exemple `J:\Reasonix Studio`) ;
-3. lancer `Reasonix Studio.exe`.
+1. download `reasonix-studio-2.50-fr.zip` from the **Releases** page;
+2. extract it wherever you want (for example `J:\Reasonix Studio`);
+3. run `Reasonix Studio.exe`.
 
-Aucun installateur, aucun droit administrateur, aucune écriture dans le registre :
-c'est une copie de dossier, elle se supprime comme un dossier.
+To remove it, delete the folder. Nothing else was written.
 
-> L'archive dépasse la limite de 100 Mo par fichier imposée à l'arborescence Git :
-> c'est pourquoi le binaire est distribué en **release**, et non dans les commits.
+> The archive is published as a release asset, not as a commit: `Reasonix Studio.exe`
+> weighs 234 MB and GitHub rejects any file above 100 MB in a repository tree.
 
----
+## What was changed from upstream
 
-## Ce qui a été modifié par rapport à l'amont
+Three files of the web interface, under `resources\frontend-next\dist\`:
 
-Trois fichiers de l'interface, dans `resources\frontend-next\dist\` :
-
-| Fichier | Modification |
+| File | Change |
 |---|---|
-| `assets\i18n-<empreinte>.js` | dictionnaire français + langue `fr` acceptée + auto-détection forcée en `fr` |
-| `assets\Settings-<empreinte>.js` | « Français » ajouté au sélecteur, trois libellés traduits |
-| `index.html` | chargement du module micro |
+| `assets\i18n-<hash>.js` | French dictionary, `fr` accepted as a language, automatic detection forced to `fr` |
+| `assets\Settings-<hash>.js` | `Français` added to the language selector, three labels translated |
+| `index.html` | loads the microphone module |
 
-Le module micro (`voice-input.js`) est un ajout : il n'existe pas en amont.
+The microphone module (`voice-input.js`) is an addition: it does not exist upstream.
 
-Le détail des modifications, les scripts et les dictionnaires sont dans le dépôt
-compagnon : [`reasonix-fr-patch`](https://github.com/xtrem21-source/reasonix-fr-patch).
+File names carry a build hash and change with every release. The scripts do not
+hard-code them — they read `index.html` to find the bundle actually loaded.
 
----
+## Known limitation
 
-## Limite connue
+The language selector in the settings **does not persist**. Reasonix Studio 2.50
+resets its language setting to empty at startup and falls back to automatic
+detection. French holds because automatic detection was forced, not because the
+choice is respected. In practice the interface is always French.
 
-Le sélecteur de langue des réglages **n'a pas d'effet durable** : l'application
-remet son réglage à vide au démarrage. Le français tient parce que l'auto-détection
-a été forcée, pas parce que le choix est respecté. En pratique : l'interface sera
-en français, quel que soit le réglage.
+## Updates
 
----
+**Do not accept the updates offered by the application.** They overwrite the
+translated files and remove the microphone. Every upstream release needs a new
+release here.
 
-## Mises à jour
-
-**N'installez pas les mises à jour proposées par l'application** : elles
-remplaceraient les fichiers francisés et retireraient le micro. Chaque nouvelle
-version amont demande une nouvelle release ici.
-
-| Version | État |
+| Version | Status |
 |---|---|
-| 2.50.0 | publiée |
+| 2.50.0 | released |
 
----
+## License and attribution
 
-## Licence et attribution
+Reasonix Studio is published under the **MIT license** by **esengine**. This
+distribution is a derivative work: the upstream MIT license and copyright notice
+apply and are reproduced in `LICENSE`.
 
-Reasonix Studio est publié sous **licence MIT** par **esengine**.
-Cette distribution est un dérivé : la licence MIT et la mention de copyright de
-l'amont s'appliquent, et sont reproduites dans `LICENSE`.
-
-Aucune garantie n'est fournie, ni par l'amont, ni ici.
+No warranty is provided, neither by upstream nor here.
