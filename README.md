@@ -1,4 +1,7 @@
-# Reasonix Studio FR
+﻿# Reasonix Studio FR
+
+<p align="center"><img src="assets/logo.png" width="128" alt="Reasonix Studio FR"></p>
+
 
 **A ready-to-run French build of Reasonix Studio, with a built-in dictation microphone.**
 
@@ -77,3 +80,4 @@ distribution is a derivative work: the upstream MIT license and copyright notice
 apply and are reproduced in `LICENSE`.
 
 No warranty is provided, neither by upstream nor here.
+

@@ -1,4 +1,7 @@
-# Reasonix Studio FR
+﻿# Reasonix Studio FR
+
+<p align="center"><img src="assets/logo.png" width="128" alt="Reasonix Studio FR"></p>
+
 
 **Une version française de Reasonix Studio, prête à l'emploi, avec un micro de dictée intégré.**
 
@@ -77,3 +80,4 @@ une œuvre dérivée : la licence MIT et la mention de copyright de l'amont s'ap
 sont reproduites dans `LICENSE`.
 
 Aucune garantie n'est fournie, ni par l'amont, ni ici.
+
